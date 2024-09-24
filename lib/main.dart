@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tourism/view/auth/login_page.dart';
 
+import 'package:tourism/view/initial_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +17,12 @@ class MyApp extends StatelessWidget {
       debugShowMaterialGrid: false,
       title: 'Tourism',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 1, 152, 84)),
         useMaterial3: true,
         fontFamily: "Raleway",
       ),
-      home: LoginPage(),
+      home: InitialPage(),
     );
   }
 }
