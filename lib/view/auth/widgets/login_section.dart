@@ -50,7 +50,7 @@ class LoginSection extends StatelessWidget {
                 border: UnderlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
-    
+
                 focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: primaryColor),
                   borderRadius: BorderRadius.circular(8.0),
@@ -68,22 +68,23 @@ class LoginSection extends StatelessWidget {
                 border: UnderlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
-    
+
                 focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: primaryColor),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
             ),
-    
+
             SizedBox(height: 40),
             // Login button
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) {
-                  return InitialPage();
-                }));
+                Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
+                  builder: (context) {
+                    return InitialPage();
+                  },
+                ), (route) => false);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: primaryColor.withOpacity(.5),

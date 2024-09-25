@@ -4,8 +4,9 @@ import 'package:tourism/model/todos_model.dart';
 
 List<DestintionsModel> destinations = [
   DestintionsModel(
+      province: "Erbil",
       name: "Choman",
-      image: 'assets/images/choman.jpg',
+      image: 'assets/images/fel.jpg',
       rentHouses: [],
       todos: [
         TodosModel(
@@ -37,8 +38,9 @@ List<DestintionsModel> destinations = [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
       ]),
   DestintionsModel(
+      province: "Suleymaniah",
       name: "Slemani",
-      image: 'assets/images/slemany.jpg',
+      image: 'assets/images/sl.jpg',
       rentHouses: [],
       todos: [
         TodosModel(
@@ -65,8 +67,9 @@ List<DestintionsModel> destinations = [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
       ]),
   DestintionsModel(
+      province: "Duhok",
       name: "Zakho",
-      image: 'assets/images/zaxo.jpeg',
+      image: 'assets/images/zax.jpeg',
       rentHouses: [],
       todos: [
         TodosModel(
@@ -83,6 +86,7 @@ List<DestintionsModel> destinations = [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
       ]),
   DestintionsModel(
+      province: "Suleymaniah ",
       name: "Hawraman",
       image: 'assets/images/hawraman.jpeg',
       rentHouses: [],
@@ -95,3 +99,6 @@ List<DestintionsModel> destinations = [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
       ])
 ];
+
+
+

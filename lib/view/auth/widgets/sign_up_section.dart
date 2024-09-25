@@ -32,7 +32,7 @@ class SingupSection extends StatelessWidget {
               height: 120,
             ),
             Text(
-              'Welcome to Tourism',
+              'Welcome to Tourism.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: secondaryColor.withOpacity(0.8),
@@ -61,9 +61,11 @@ class SingupSection extends StatelessWidget {
             // Login button
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return InitialPage();
-                }));
+                Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
+                  builder: (context) {
+                    return InitialPage();
+                  },
+                ), (route) => false);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: primaryColor.withOpacity(.5),
