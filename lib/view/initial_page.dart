@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:tourism/helper/widgets/icon_buttom_bar.dart';
-import 'package:tourism/view/nav_pages/categories/cateogries_screen.dart';
-import 'package:tourism/view/nav_pages/favorite/favorite_screen.dart';
-import 'package:tourism/view/nav_pages/home/home_page.dart';
-import 'package:tourism/view/nav_pages/profile/profile_page.dart';
+import 'package:tourism/assistant/widgets/icon_buttom_bar.dart';
+import 'package:tourism/view/nav/categories/destination_list_screen.dart';
+import 'package:tourism/view/nav/favorite/favorite_screen.dart';
+import 'package:tourism/view/nav/home/home_page.dart';
+import 'package:tourism/view/nav/profile/profile_page.dart';
 
 class InitialPage extends StatefulWidget {
   const InitialPage({super.key});
@@ -20,7 +20,6 @@ class _InitialPageState extends State<InitialPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     void onSeeAllTapped() {
       setState(() {
@@ -32,7 +31,7 @@ class _InitialPageState extends State<InitialPage> {
       HomePage(
         onSeeAllTapped: onSeeAllTapped,
       ),
-      const CateogriesPage(),
+      const DestinationListPage(),
       const FavoritePage(),
       const ProfilePage()
     ];

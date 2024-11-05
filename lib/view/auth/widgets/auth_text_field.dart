@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tourism/helper/util/colors.dart';
+import 'package:tourism/assistant/util/colors.dart';
 
 class AuthTextField extends StatelessWidget {
   const AuthTextField({

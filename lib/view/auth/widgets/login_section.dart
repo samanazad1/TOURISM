@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tourism/helper/util/colors.dart';
+import 'package:tourism/assistant/util/colors.dart';
 import 'package:tourism/view/initial_page.dart';
 
 class LoginSection extends StatelessWidget {
