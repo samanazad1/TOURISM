@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:tourism/assistant/util/colors.dart';
-
 import 'package:tourism/model/data/tourism_type.dart';
 import 'package:tourism/model/tourism_type_model.dart';
+import 'package:tourism/view/nav/categories/search_result.dart';
+import 'package:tourism/view/nav/home/sub_pages.dart';
 import 'package:tourism/view/nav/home/widgets/popular_destination.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,6 +12,8 @@ class HomePage extends StatelessWidget {
   final Function() onSeeAllTapped;
   @override
   Widget build(BuildContext context) {
+//
+    // final userController = Provider.of<UserController>(context, listen: false);
     return Scaffold(
       appBar: AppBar(title: Text("Tourism")),
       body: SingleChildScrollView(
@@ -23,32 +25,27 @@ class HomePage extends StatelessWidget {
               height: 55,
               child: TextField(
                 cursorHeight: 18,
+                readOnly:
+                    true, // Make TextField read-only to trigger navigation
                 decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      IconlyLight.search,
-                      color: Colors.black,
-                    ),
-                    hintText: "Search",
-                    hintStyle:
-                        TextStyle(color: const Color.fromARGB(255, 31, 31, 31)),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.black,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(15)),
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.black,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(15)),
-                    border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.black,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(15))),
+                  prefixIcon: Icon(Icons.search, color: Colors.black),
+                  hintText: "Search",
+                  hintStyle: TextStyle(color: Color.fromARGB(255, 31, 31, 31)),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 1),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 1),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SearchResultPage()),
+                  );
+                },
               ),
             ),
             SizedBox(
@@ -110,9 +107,17 @@ class HomePage extends StatelessWidget {
                     final type = tourismTypes[i];
                     return InkWell(
                         onTap: null,
-                        child: TourismTypeCard(
-                          type: type,
-                          isFromList: false,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return TourismDetailPage(tourismType: type);
+                            }));
+                          },
+                          child: TourismTypeCard(
+                            type: type,
+                            isFromList: false,
+                          ),
                         ));
                   }),
             ),
@@ -150,7 +155,9 @@ class TourismTypesScreen extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   // Add functionality for when a type is tapped, like navigation or a modal
-                  print("Tapped on ${type.name}");
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return TourismDetailPage(tourismType: type);
+                  }));
                 },
                 child: TourismTypeCard(type: type, isFromList: true),
               );

@@ -3,15 +3,24 @@ import 'package:tourism/assistant/util/colors.dart';
 
 class AuthTextField extends StatelessWidget {
   const AuthTextField({
-    super.key, required this.hint,  this.controller,
+    super.key,
+    required this.hint,
+    this.obscureText = false,
+    this.controller, required this.validator,
   });
- final String hint;
- final TextEditingController? controller;
+  final String hint;
+
+  final String? Function(String?) validator;
+  final bool obscureText;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      controller:controller ,
+    return TextFormField(
+      validator: validator,
+      style: TextStyle(color: Colors.white),
+      controller: controller,
+      obscureText: obscureText,
       decoration: InputDecoration(
         
         focusColor: primaryColor,

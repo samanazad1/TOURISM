@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085728633055",
+    "project_id": "tourism-37c6a",
+    "storage_bucket": "tourism-37c6a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085728633055:android:3d53198be1b85dc555f96a",
+        "android_client_info": {
+          "package_name": "com.college.tourism"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDssnk2kOjypYzGHbUhZHNzJ_ycHyPcN2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

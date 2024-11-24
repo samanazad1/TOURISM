@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:tourism/assistant/helper.dart';
 import 'package:tourism/assistant/util/colors.dart';
 import 'package:tourism/assistant/util/sizes.dart';
+import 'package:tourism/controller/user_controller.dart';
 import 'package:tourism/view/auth/auth_page.dart';
+import 'package:tourism/view/nav/profile/profile_pages/edit_profile.dart';
+import 'package:tourism/view/settings/setting_pagee.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -11,7 +16,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  String userName = "John Doe";
+  String userName = "Guest";
 
   @override
   Widget build(BuildContext context) {
@@ -21,95 +26,133 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Avatar and Edit button
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 40,
-                  backgroundImage: AssetImage(
-                      'assets/images/user-avatar.png'), // Replace with your image asset
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Saman Azad",
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text("#ID: 344",
+        child:
+            Consumer<UserController>(builder: (context, userProvider, child) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Avatar and Edit button
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 40,
+                    backgroundImage: AssetImage(
+                        'assets/images/user-avatar.png'), // Replace with your image asset
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        userProvider.isLoggedIn
+                            ? userProvider.userModel!.name
+                            : userName,
                         style: const TextStyle(
-                          fontSize: 15,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
-                        ))
-                  ],
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            // User name and edit button
-
-            Text(
-              "App Settings",
-              style: TextStyle(fontWeight: FontWeight.w700),
-            ),
-            const SizedBox(height: 10),
-            // User name and edit button
-            ProfileButton(
-              onTap: () {},
-              text: "Edit profile",
-            ), // User name and edit button
-            ProfileButton(
-              onTap: () {},
-              text: "Settings",
-            ),
-            ProfileButton(
-              onTap: () {},
-              text: "About",
-            ),
-            ProfileButton(
-              onTap: () {},
-              text: "Support",
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 1,
-              width: double.infinity,
-              color: primaryColor,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            ProfileButton(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return AuthPage();
-                }));
-              },
-              isLogout: true,
-              text: "Logout",
-              body: Text(
-                "Logout",
-                style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.red),
+                        ),
+                      ),
+                      Text(
+                          userProvider.isLoggedIn
+                              ? userProvider.userModel!.id
+                              : "#ID: 344",
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ))
+                    ],
+                  ),
+                ],
               ),
-            )
-          ],
-        ),
+              const SizedBox(height: 20),
+              // User name and edit button
+
+              Text(
+                "App Settings",
+                style: TextStyle(fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 10),
+              // User name and edit button
+              ProfileButton(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => EditProfilePage()),
+                  );
+                },
+                text: "Edit Profile",
+              ),
+              ProfileButton(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SettingsPage()),
+                  );
+                },
+                text: "Settings",
+              ),
+              ProfileButton(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AboutPage()),
+                  );
+                },
+                text: "About",
+              ),
+              ProfileButton(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SupportPage()),
+                  );
+                },
+                text: "Support",
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 1,
+                width: double.infinity,
+                color: primaryColor,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ProfileButton(
+                onTap: () {
+                  userProvider.isLoggedIn
+                      ? areYouSure(context, function: () {
+                          userProvider.logout().then((value) =>
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return AuthPage();
+                              })));
+                        }, title: "Are you sure? ")
+                      : Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                          return AuthPage();
+                        }));
+                },
+                isLogout: true,
+                text: userProvider.isLoggedIn ? "Logout" : "login",
+                body: Text(
+                  userProvider.isLoggedIn ? "Logout" : "login",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color:
+                          userProvider.isLoggedIn ? Colors.red : Colors.green),
+                ),
+              )
+            ],
+          );
+        }),
       ),
     );
   }

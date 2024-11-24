@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:tourism/assistant/util/sizes.dart';
 import 'package:tourism/view/destinations/destination_details.dart';
 import 'package:tourism/view/nav/categories/destination_list_screen.dart';
+import 'package:tourism/view/nav/categories/widgets/destination_card.dart';
 
 import '../../../../model/data/destination_data.dart';
 

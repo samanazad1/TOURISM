@@ -98,102 +98,6 @@ List<DestintionsModel> destinations = [
             descreption:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
       ]),
-  // DestintionsModel(
-  //     province: "Duhok",
-  //     name: "Sherana Valley",
-  //     image: 'assets/images/sherana-valley.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/sherana-waterfall.jpg'],
-  //           title: "Explore Sherana Waterfalls",
-  //           descreption:
-  //               "The magnificent waterfalls of Sherana Valley cascade down limestone cliffs, creating natural pools perfect for swimming during summer. The area features multiple waterfalls of varying sizes, with well-maintained hiking trails connecting them. Spring brings spectacular wildflower displays along the paths."),
-  //       TodosModel(
-  //           images: ['assets/images/sherana-camping.jpg'],
-  //           title: "Camping in Sherana",
-  //           descreption:
-  //               "Experience the tranquility of Sherana Valley through overnight camping. Designated camping areas provide basic facilities while maintaining the natural environment. The valley is known for its clear night skies, perfect for stargazing and photography.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/sherana-resort.jpg'],
-  //           name: "Sherana Valley Resort",
-  //           descreption:
-  //               "A modern mountain resort featuring traditional Kurdish architectural elements. Offers private chalets with valley views, a restaurant serving local specialties, and guided adventure activities including rock climbing and canyoning. The resort organizes seasonal festivals celebrating local culture and nature.")
-  //     ]),
-  // DestintionsModel(
-  //     province: "Duhok",
-  //     name: "Allane Valley",
-  //     image: 'assets/images/allane-valley.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/allane-springs.jpg'],
-  //           title: "Visit Natural Springs",
-  //           descreption:
-  //               "Allane Valley is famous for its crystal-clear natural springs, each with unique mineral compositions. Local legends attribute healing properties to these waters. Visitors can fill bottles with spring water and enjoy picnic areas around the main springs."),
-  //       TodosModel(
-  //           images: ['assets/images/allane-hiking.jpg'],
-  //           title: "Valley Hiking Trail",
-  //           descreption:
-  //               "The comprehensive trail system through Allane Valley connects various historical sites, springs, and viewpoints. The main trail is 12km long with several shorter loop options, offering views of traditional villages and ancient cave dwellings.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/allane-lodge.jpg'],
-  //           name: "Allane Mountain Lodge",
-  //           descreption:
-  //               "An eco-friendly lodge built using local materials and traditional techniques. Features private rooms with balconies, a restaurant focusing on organic local ingredients, and educational programs about local ecology and culture. The lodge organizes guided nature walks and cultural experiences.")
-  //     ]),
-  // DestintionsModel(
-  //     province: "Sulaymaniyah",
-  //     name: "Mawat",
-  //     image: 'assets/images/mawat-landscape.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/mawat-peaks.jpg'],
-  //           title: "Summit Mawat Peaks",
-  //           descreption:
-  //               "The dramatic peaks surrounding Mawat offer challenging climbs and stunning views. Professional guides are available for technical climbs, while marked trails provide options for casual hikers. The area is particularly beautiful during sunrise and sunset."),
-  //       TodosModel(
-  //           images: ['assets/images/mawat-village.jpg'],
-  //           title: "Explore Traditional Villages",
-  //           descreption:
-  //               "Visit centuries-old Kurdish villages around Mawat, where traditional life continues. Many villages offer homestay opportunities, allowing visitors to experience authentic Kurdish hospitality, traditional cooking, and daily mountain life.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/mawat-resort.jpg'],
-  //           name: "Mawat Mountain Resort",
-  //           descreption:
-  //               "A luxury mountain resort combining modern amenities with traditional Kurdish architecture. Features include an infinity pool overlooking the valley, spa treatments using local herbs, and restaurants serving both traditional and international cuisine. Winter activities include skiing and snowboarding.")
-  //     ]),
-  // DestintionsModel(
-  //     province: "Erbil",
-  //     name: "Rawanduz",
-  //     image: 'assets/images/rawanduz-town.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/gali-ali-beg.jpg'],
-  //           title: "Visit Gali Ali Beg Canyon",
-  //           descreption:
-  //               "One of the deepest canyons in the Middle East, Gali Ali Beg offers breathtaking views and hiking opportunities. The canyon features ancient paths used by traders for centuries. The nearby waterfall is one of the highest in Iraq."),
-  //       TodosModel(
-  //           images: ['assets/images/rawanduz-bazaar.jpg'],
-  //           title: "Explore Historic Bazaar",
-  //           descreption:
-  //               "The traditional bazaar of Rawanduz features local crafts, textiles, and food products. Known for its metalwork and carpet weaving, the bazaar provides insights into traditional Kurdish trades and crafts.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/rawanduz-resort.jpg'],
-  //           name: "Pank Tourist Village",
-  //           descreption:
-  //               "A modern resort complex offering stunning views of the surrounding mountains. Features include a teleférik (cable car) system, restaurants with panoramic views, and accommodation options ranging from hotel rooms to private villas. Popular activities include paragliding and mountain biking.")
-  //     ]),
 
   DestintionsModel(
       province: "Duhok",
@@ -219,54 +123,6 @@ List<DestintionsModel> destinations = [
             descreption:
                 "A boutique mountain resort offering comfortable accommodations with modern amenities. The resort specializes in adventure tourism, offering guided climbing, caving, and hiking expeditions. The on-site restaurant serves traditional Kurdish mountain cuisine.")
       ]),
-  // DestintionsModel(
-  //     province: "Sulaymaniyah",
-  //     name: "Ahmad Awa",
-  //     image: 'assets/images/ahmad-awa.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/ahmad-awa-falls.jpg'],
-  //           title: "Ahmad Awa Waterfall",
-  //           descreption:
-  //               "The spectacular Ahmad Awa waterfall is surrounded by lush vegetation and picnic areas. The site includes natural pools for swimming and rocks for sunbathing. The area is particularly popular during summer months for its cool microclimate."),
-  //       TodosModel(
-  //           images: ['assets/images/hawraman-path.jpg'],
-  //           title: "Traditional Path to Hawraman",
-  //           descreption:
-  //               "Follow the historic trading route connecting Ahmad Awa to Hawraman. This well-maintained path offers stunning views and passes through several traditional villages where local handicrafts can be purchased.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/ahmadawa.PNG'],
-  //           name: "Ahmad Awa Paradise Resort",
-  //           descreption:
-  //               "A riverside resort offering comfortable accommodation near the waterfall. Features include riverside dining, traditional tea houses, and organized excursions to nearby attractions. The resort is known for its peaceful atmosphere and excellent local cuisine.")
-  //     ]),
-  // DestintionsModel(
-  //     province: "Erbil",
-  //     name: "Gali Balinda",
-  //     image: 'assets/images/gali-balinda.jpg',
-  //     rentHouses: [],
-  //     todos: [
-  //       TodosModel(
-  //           images: ['assets/images/balinda-viewpoint.jpg'],
-  //           title: "Scenic Viewpoints",
-  //           descreption:
-  //               "A series of dramatic viewpoints offer spectacular vistas of the surrounding mountains and valleys. The area is famous for its sunset views and photography opportunities. Several cafes and picnic areas are available at key viewpoints."),
-  //       TodosModel(
-  //           images: ['assets/images/balinda-snow.jpg'],
-  //           title: "Winter Sports",
-  //           descreption:
-  //               "During winter months, Gali Balinda becomes a popular destination for skiing and snowboarding. The area features basic ski facilities and equipment rental, making it perfect for beginners and intermediate winter sports enthusiasts.")
-  //     ],
-  //     resorts: [
-  //       ResortsModel(
-  //           images: ['assets/images/balinda-resort.jpg'],
-  //           name: "Balinda Mountain Resort",
-  //           descreption:
-  //               "A year-round resort offering seasonal activities and comfortable accommodation. Features include a restaurant with panoramic views, winter sports facilities, and summer hiking programs. The resort organizes special events during major Kurdish holidays.")
-  //     ]),
 
   DestintionsModel(
       province: "Duhok",
@@ -340,7 +196,9 @@ List<DestintionsModel> destinations = [
             descreption:
                 "A lakeside resort offering water sports and relaxation. Features include private beaches, water skiing facilities, and fresh fish restaurants. Accommodation options range from hotel rooms to private waterfront bungalows.")
       ]),
-  // DestintionsModel(
+ 
+];
+ // DestintionsModel(
   //     province: "Erbil",
   //     name: "Salahuddin",
   //     image: 'assets/images/salahuddin.jpg',
@@ -460,4 +318,147 @@ List<DestintionsModel> destinations = [
   //           descreption:
   //               "A modern resort offering comfortable accommodation in a natural setting. Features include spacious rooms with mountain views, restaurants serving traditional Kurdish cuisine, and organized outdoor activities. The resort provides easy access to nearby hiking trails and natural attractions.")
   //     ])
-];
+  // DestintionsModel(
+  //     province: "Sulaymaniyah",
+  //     name: "Ahmad Awa",
+  //     image: 'assets/images/ahmad-awa.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/ahmad-awa-falls.jpg'],
+  //           title: "Ahmad Awa Waterfall",
+  //           descreption:
+  //               "The spectacular Ahmad Awa waterfall is surrounded by lush vegetation and picnic areas. The site includes natural pools for swimming and rocks for sunbathing. The area is particularly popular during summer months for its cool microclimate."),
+  //       TodosModel(
+  //           images: ['assets/images/hawraman-path.jpg'],
+  //           title: "Traditional Path to Hawraman",
+  //           descreption:
+  //               "Follow the historic trading route connecting Ahmad Awa to Hawraman. This well-maintained path offers stunning views and passes through several traditional villages where local handicrafts can be purchased.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/ahmadawa.PNG'],
+  //           name: "Ahmad Awa Paradise Resort",
+  //           descreption:
+  //               "A riverside resort offering comfortable accommodation near the waterfall. Features include riverside dining, traditional tea houses, and organized excursions to nearby attractions. The resort is known for its peaceful atmosphere and excellent local cuisine.")
+  //     ]),
+  // DestintionsModel(
+  //     province: "Erbil",
+  //     name: "Gali Balinda",
+  //     image: 'assets/images/gali-balinda.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/balinda-viewpoint.jpg'],
+  //           title: "Scenic Viewpoints",
+  //           descreption:
+  //               "A series of dramatic viewpoints offer spectacular vistas of the surrounding mountains and valleys. The area is famous for its sunset views and photography opportunities. Several cafes and picnic areas are available at key viewpoints."),
+  //       TodosModel(
+  //           images: ['assets/images/balinda-snow.jpg'],
+  //           title: "Winter Sports",
+  //           descreption:
+  //               "During winter months, Gali Balinda becomes a popular destination for skiing and snowboarding. The area features basic ski facilities and equipment rental, making it perfect for beginners and intermediate winter sports enthusiasts.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/balinda-resort.jpg'],
+  //           name: "Balinda Mountain Resort",
+  //           descreption:
+  //               "A year-round resort offering seasonal activities and comfortable accommodation. Features include a restaurant with panoramic views, winter sports facilities, and summer hiking programs. The resort organizes special events during major Kurdish holidays.")
+  //     ]),
+  // DestintionsModel(
+  //     province: "Duhok",
+  //     name: "Sherana Valley",
+  //     image: 'assets/images/sherana-valley.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/sherana-waterfall.jpg'],
+  //           title: "Explore Sherana Waterfalls",
+  //           descreption:
+  //               "The magnificent waterfalls of Sherana Valley cascade down limestone cliffs, creating natural pools perfect for swimming during summer. The area features multiple waterfalls of varying sizes, with well-maintained hiking trails connecting them. Spring brings spectacular wildflower displays along the paths."),
+  //       TodosModel(
+  //           images: ['assets/images/sherana-camping.jpg'],
+  //           title: "Camping in Sherana",
+  //           descreption:
+  //               "Experience the tranquility of Sherana Valley through overnight camping. Designated camping areas provide basic facilities while maintaining the natural environment. The valley is known for its clear night skies, perfect for stargazing and photography.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/sherana-resort.jpg'],
+  //           name: "Sherana Valley Resort",
+  //           descreption:
+  //               "A modern mountain resort featuring traditional Kurdish architectural elements. Offers private chalets with valley views, a restaurant serving local specialties, and guided adventure activities including rock climbing and canyoning. The resort organizes seasonal festivals celebrating local culture and nature.")
+  //     ]),
+  // DestintionsModel(
+  //     province: "Duhok",
+  //     name: "Allane Valley",
+  //     image: 'assets/images/allane-valley.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/allane-springs.jpg'],
+  //           title: "Visit Natural Springs",
+  //           descreption:
+  //               "Allane Valley is famous for its crystal-clear natural springs, each with unique mineral compositions. Local legends attribute healing properties to these waters. Visitors can fill bottles with spring water and enjoy picnic areas around the main springs."),
+  //       TodosModel(
+  //           images: ['assets/images/allane-hiking.jpg'],
+  //           title: "Valley Hiking Trail",
+  //           descreption:
+  //               "The comprehensive trail system through Allane Valley connects various historical sites, springs, and viewpoints. The main trail is 12km long with several shorter loop options, offering views of traditional villages and ancient cave dwellings.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/allane-lodge.jpg'],
+  //           name: "Allane Mountain Lodge",
+  //           descreption:
+  //               "An eco-friendly lodge built using local materials and traditional techniques. Features private rooms with balconies, a restaurant focusing on organic local ingredients, and educational programs about local ecology and culture. The lodge organizes guided nature walks and cultural experiences.")
+  //     ]),
+  // DestintionsModel(
+  //     province: "Sulaymaniyah",
+  //     name: "Mawat",
+  //     image: 'assets/images/mawat-landscape.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/mawat-peaks.jpg'],
+  //           title: "Summit Mawat Peaks",
+  //           descreption:
+  //               "The dramatic peaks surrounding Mawat offer challenging climbs and stunning views. Professional guides are available for technical climbs, while marked trails provide options for casual hikers. The area is particularly beautiful during sunrise and sunset."),
+  //       TodosModel(
+  //           images: ['assets/images/mawat-village.jpg'],
+  //           title: "Explore Traditional Villages",
+  //           descreption:
+  //               "Visit centuries-old Kurdish villages around Mawat, where traditional life continues. Many villages offer homestay opportunities, allowing visitors to experience authentic Kurdish hospitality, traditional cooking, and daily mountain life.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/mawat-resort.jpg'],
+  //           name: "Mawat Mountain Resort",
+  //           descreption:
+  //               "A luxury mountain resort combining modern amenities with traditional Kurdish architecture. Features include an infinity pool overlooking the valley, spa treatments using local herbs, and restaurants serving both traditional and international cuisine. Winter activities include skiing and snowboarding.")
+  //     ]),
+  // DestintionsModel(
+  //     province: "Erbil",
+  //     name: "Rawanduz",
+  //     image: 'assets/images/rawanduz-town.jpg',
+  //     rentHouses: [],
+  //     todos: [
+  //       TodosModel(
+  //           images: ['assets/images/gali-ali-beg.jpg'],
+  //           title: "Visit Gali Ali Beg Canyon",
+  //           descreption:
+  //               "One of the deepest canyons in the Middle East, Gali Ali Beg offers breathtaking views and hiking opportunities. The canyon features ancient paths used by traders for centuries. The nearby waterfall is one of the highest in Iraq."),
+  //       TodosModel(
+  //           images: ['assets/images/rawanduz-bazaar.jpg'],
+  //           title: "Explore Historic Bazaar",
+  //           descreption:
+  //               "The traditional bazaar of Rawanduz features local crafts, textiles, and food products. Known for its metalwork and carpet weaving, the bazaar provides insights into traditional Kurdish trades and crafts.")
+  //     ],
+  //     resorts: [
+  //       ResortsModel(
+  //           images: ['assets/images/rawanduz-resort.jpg'],
+  //           name: "Pank Tourist Village",
+  //           descreption:
+  //               "A modern resort complex offering stunning views of the surrounding mountains. Features include a teleférik (cable car) system, restaurants with panoramic views, and accommodation options ranging from hotel rooms to private villas. Popular activities include paragliding and mountain biking.")
+  //     ]),

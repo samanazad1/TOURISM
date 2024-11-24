@@ -4,7 +4,7 @@ import 'package:tourism/assistant/util/colors.dart';
 import 'package:tourism/controller/favorite_controller.dart';
 
 import 'package:tourism/view/auth/auth_page.dart';
-import 'package:tourism/view/nav/categories/destination_list_screen.dart';
+import 'package:tourism/view/nav/categories/widgets/destination_card.dart';
 
 class FavoritePage extends StatelessWidget {
   const FavoritePage({super.key});
